@@ -1,0 +1,18 @@
+修改目录的组：
+	sudo chgrp -R stock_data    /home/much/share/dat/qutn
+
+然后修改权限：
+	sudo chmod g+s /home/much/share/dat/qutn
+
+查看 组的权限：
+	find -group stock_data -perm -g+r+x  |  less
+
+授权组的权限：
+	chmod g+r+x 		/home/much/share/py/bas
+
+执行前必须先保证文件已经有授权的权限
+
+
+修改 smb 密码：
+sudo smbpasswd -a much
+
